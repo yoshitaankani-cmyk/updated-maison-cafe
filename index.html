@@ -1,0 +1,286 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ef">
+  <title>MAISON | Artisan Café</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="#home">MAISON<span>.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#about">Why MAISON</a>
+    </nav>
+
+    <button class="cart-button" onclick="toggleCart()">
+      Cart (<span id="cart-count">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+    <div class="hero-content">
+        <p class="hero-tagline">A LITTLE MOMENT OF HAPPINESS</p>
+
+        <h1>Welcome to <span>MAISON</span> Café</h1>
+
+        <p>
+            Where freshly brewed coffee, delicious pastries,
+            and beautiful moments come together.
+        </p>
+
+        <a href="#menu" class="explore-btn">Explore Our Menu</a>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200"
+            alt="Freshly brewed coffee at MAISON Café"
+        >
+    </div>
+</section>
+
+    <!-- INTRODUCTION -->
+    <section class="intro-section">
+      <p class="eyebrow">WELCOME TO MAISON</p>
+      <h2>Your everyday escape,<br>served with something delicious.</h2>
+      <p>
+        Discover comforting classics, beautiful bakes and refreshing
+        favourites, all in one little corner.
+      </p>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">MADE FRESH FOR YOU</p>
+        <h2>Explore our menu</h2>
+        <p>Find something you'll love, one delicious bite at a time.</p>
+      </div>
+
+      <input
+        id="search"
+        type="search"
+        placeholder="Search coffee, cakes, pastries..."
+        aria-label="Search menu"
+      >
+
+      <div id="categories" class="categories"></div>
+      <div id="products" class="products"></div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="story-section" id="story">
+      <div class="story-content">
+        <p class="eyebrow">A STORY OF SIMPLE PLEASURES</p>
+        <h2>More than a café.<br><em>A feeling of belonging.</em></h2>
+
+        <p>
+          At MAISON, we believe the most beautiful moments are often
+          the simplest. A warm cup of coffee, a freshly baked pastry,
+          a conversation that lasts a little longer than expected.
+        </p>
+
+        <p>
+          Our café brings together thoughtfully selected flavours,
+          comforting favourites and a welcoming atmosphere.
+          Every visit is an invitation to slow down and enjoy the little things.
+        </p>
+
+        <a href="#menu" class="primary-button">Discover our menu</a>
+      </div>
+
+      <div class="story-decoration">
+        <span>MAISON</span>
+        <h3>Crafted with care.<br>Enjoyed with love.</h3>
+        <p>GOOD FOOD · GOOD COFFEE · GOOD MOMENTS</p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">THE MAISON DIFFERENCE</p>
+        <h2>Why choose MAISON?</h2>
+        <p>Little details make every experience special.</p>
+      </div>
+
+      <div class="why-grid">
+        <article class="why-card">
+          <span>01</span>
+          <h3>Thoughtfully Selected</h3>
+          <p>
+            From comforting classics to delightful discoveries,
+            every menu choice is made with care.
+          </p>
+        </article>
+
+        <article class="why-card">
+          <span>02</span>
+          <h3>Freshly Inspired</h3>
+          <p>
+            We celebrate the joy of fresh flavours,
+            beautiful textures and delicious combinations.
+          </p>
+        </article>
+
+        <article class="why-card">
+          <span>03</span>
+          <h3>A Beautiful Experience</h3>
+          <p>
+            Warm colours, welcoming details and a relaxed
+            atmosphere make every visit feel special.
+          </p>
+        </article>
+
+        <article class="why-card">
+          <span>04</span>
+          <h3>Something for Everyone</h3>
+          <p>
+            Explore coffees, pastries, cakes, sandwiches,
+            refreshing drinks and more.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy-section">
+      <p class="eyebrow">OUR PHILOSOPHY</p>
+      <h2>Slow down. Sip slowly.<br><em>Stay a little longer.</em></h2>
+      <p>
+        We believe a café should be more than a place to eat.
+        It should be a place to pause, connect, celebrate and create memories.
+      </p>
+    </section>
+
+    <!-- OUR PROMISE -->
+    <section class="promise-section">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE PROMISE FROM US</p>
+        <h2>Every detail matters.</h2>
+      </div>
+
+      <div class="promise-grid">
+        <div>
+          <h3>Quality</h3>
+          <p>Carefully presented favourites and flavours worth coming back for.</p>
+        </div>
+
+        <div>
+          <h3>Comfort</h3>
+          <p>A welcoming café experience where you can feel at ease.</p>
+        </div>
+
+        <div>
+          <h3>Joy</h3>
+          <p>Little everyday treats that make ordinary moments memorable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL INVITATION -->
+    <section class="visit-section">
+      <p class="eyebrow">YOUR TABLE IS WAITING</p>
+      <h2>Make today a little more delicious.</h2>
+      <p>Find your new favourite in the MAISON menu.</p>
+      <a href="#menu" class="primary-button">Explore the menu</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="logo" href="#home">MAISON<span>.</span></a>
+    <p>Thoughtfully made. Beautifully enjoyed.</p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#about">Why MAISON</a>
+    </div>
+
+    <p class="copyright">© 2026 MAISON Café. All rights reserved.</p>
+  </footer>
+
+  <!-- CART -->
+  <div id="cart-panel" class="cart-panel">
+    <div class="cart-heading">
+      <h2>Your cart</h2>
+      <button onclick="toggleCart()" aria-label="Close cart">✕</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-bottom">
+      <h3>Total: ₹<span id="cart-total">0</span></h3>
+      <button class="primary-button checkout-button" onclick="openCheckout()">
+        Proceed to checkout
+      </button>
+    </div>
+  </div>
+
+  <div id="overlay" onclick="closePanels()"></div>
+
+  <!-- CHECKOUT -->
+  <div id="checkout" class="checkout">
+    <button class="close-checkout" onclick="closeCheckout()" aria-label="Close checkout">✕</button>
+
+    <h2>Complete your order</h2>
+
+    <form id="checkout-form">
+      <label for="customer-name">Your name</label>
+      <input id="customer-name" name="name" required placeholder="Full name">
+
+      <label for="customer-phone">Phone number</label>
+      <input
+        id="customer-phone"
+        name="phone"
+        type="tel"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required
+        placeholder="10-digit mobile number"
+      >
+
+      <label for="customer-address">Delivery address</label>
+      <textarea
+        id="customer-address"
+        name="address"
+        required
+        placeholder="House number, street, city"
+      ></textarea>
+
+      <label for="payment-method">Payment method</label>
+      <select id="payment-method" name="payment" required>
+        <option value="Cash on delivery">Cash on delivery</option>
+        <option value="Pay on pickup">Pay on pickup</option>
+      </select>
+
+      <button class="primary-button" type="submit">Place order</button>
+    </form>
+
+    <p class="small-note">
+      Demo checkout only. No payment is collected and no order is sent to a real café.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
